@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app ='test'>
+<head>
+  <meta charset="utf-8">
+  <title>Exercice 2</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+</head>
+<body>
+  <div ng-controller='carsCtrl'>
+    <table cellspacing="2px" cellpadding="2px;" rules="all" style="border:solid 1px black;">
+      <thead>
+        <th>Modèle</th>
+        <th>Couleur</th>
+      </thead>
+      <tr ng-repeat="car in cars">
+        <!-- ng-repeat est une directive qui permet de boucler directement dans le html  -->
+        <td>
+          {{car.marque}}
+        </td>
+        <td>
+          {{car.couleur}}
+        </td>
+      </tr>
+    </table>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
